@@ -1,0 +1,59 @@
+﻿body {
+    font-size:12px;
+	MARGIN-TOP:2px; MARGIN-LEFT:2px; MARGIN-RIGHT:0px;
+	background-image:url(../images/background.gif)
+}
+.hidd{display:none;}
+td {
+    font-size:12px; background-color:#fff7e5
+}
+
+table {background-color:#dbeaf5; }
+.c{border-bottom:#dbeaf5 solid 20px;}
+
+input {
+    border:1px solid #B3D7F1;
+}
+
+input.btn {border:1px solid #B3D7F1; background-color:#FFFFFF; cursor:hand}
+
+.P {
+    CURSOR:hand; background-image:url(../images/toolbar.gif);
+}
+
+.T {
+    BACKGROUND-COLOR:#e9f2f8;
+		BORDER:1px solid #336699; CURSOR:hand
+}
+
+.LL {cursor:hand}
+
+.toolbar {
+    background-image:url(../images/toolbar.gif); height:20px; 
+	text-align:center; vertical-align:middle
+}
+
+.title1 {
+    color:#003399; background-color:#dbeaf5; height:20px; text-align:center
+}
+
+.title2 {
+    color:#003399; background-color:#dbeaf5; height:12px; text-align:center
+}
+
+a		{COLOR:#000099; TEXT-DECORATION:none}
+a:hover	{TEXT-DECORATION:underline}
+
+.requred_symbol { color:#FF0000; }
+
+.queryDiv{
+	padding:10px 10px;
+}
+
+.pageDiv{
+	padding:10px 10px;
+	text-align:center;
+}
+.wrong{
+	color:red;
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>mvc</display-name>
+  
+  
+  <!-- 编码过滤 -->
+  <filter>
+  	<filter-name>encodingFilter</filter-name>
+  	<filter-class>com.scm.filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>encodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <!-- 登录过滤 -->
+  <filter>
+  	<filter-name>loginFilter</filter-name>
+  	<filter-class>com.scm.filter.LoginFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>loginFilter</filter-name>
+  	<url-pattern>/main/*</url-pattern>
+  </filter-mapping>
+  <!-- 权限过滤 -->
+  <filter>
+  	<filter-name>permissionFilter</filter-name>
+  	<filter-class>com.scm.filter.PermissionFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>permissionFilter</filter-name>
+  	<url-pattern>/main/*</url-pattern>
+  </filter-mapping>
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
